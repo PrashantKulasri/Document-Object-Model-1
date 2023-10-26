@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini caluculator</title>
+</head>
+<style>
+    #top{
+        margin-top: 2%;
+    }
+</style>
+<body> 
+
+    <div>
+        <input id="value1" type="text" placeholder="Enter first number">
+        <input id="value2" type="text" placeholder="Enter second number">
+    </div>
+
+    <div id="top">
+        <button onclick="add()">Add</button>
+        <button onclick="sub()">Substract</button>
+        <button onclick="div()">Divide</button>
+        <button onclick="mul()">Multiply</button>
+    </div>
+</body>
+</html>
+
+<script>
+    var a = document.getElementById("value1");
+    var b = document.getElementById("value2");
+
+    function add(){
+        var sum = (1*a.value) + (1*b.value);
+        alert(sum)
+    }
+    function sub(){
+        var sum = (1*a.value) - (1*b.value);
+        alert(sum)
+    }
+    function div(){
+        var sum = (1*a.value) / (1*b.value);
+        alert(sum)
+    }
+    function mul(){
+        var sum = (1*a.value) * (1*b.value);
+        alert(sum)
+    }
+</script>
